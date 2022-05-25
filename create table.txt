@@ -1,0 +1,14 @@
+CREATE TABLE `participants` (
+  `id` int(3) unsigned NOT NULL AUTO_INCREMENT,
+  `FullName` varchar(250) NOT NULL,
+  `NID` varchar(20) NOT NULL,
+  `ContactNo` int(7) NOT NULL,
+  `DOB` date NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `education_level` varchar(200) NOT NULL,
+  `isPaid` tinyint(1) NOT NULL,
+  `isPending` tinyint(1) NOT NULL,
+  `isApproved` tinyint(1) NOT NULL,
+  `isRejected` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4
