@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light bt-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/MNU_Logo.png" alt="" width="" height="24" class="d-inline-block align-text-top">
+                <img src="./images/MNU_Logo.png" alt="" width="" height="24" class="d-inline-block align-text-top">
                 Maldives National University
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,10 +50,10 @@
                         Education in a Post-Pandemic World
                     </h1>
                     <p class="lead text-muted my-4">Maldives Academic Forum 2022</p>
-                    <a href="/register.html" class="btn btn-primary btn-lg mb-4">Register</a>
+                    <a href="./register.php" class="btn btn-primary btn-lg mb-4">Register</a>
                 </div>
                 <div>
-                    <img class="img-fluid d-none d-sm-block" src="/images/home_background.jpeg" alt="">
+                    <img class="img-fluid d-none d-sm-block" src="./images/home_background.jpeg" alt="">
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/images/speaker_1.jpg" class="card-img-top rounded-circle p-4" alt="...">
+                        <img src="./images/speaker_1.jpg" class="card-img-top rounded-circle p-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Ali Morshedlou</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/images/speaker_2.jpg" class="card-img-top rounded-circle p-4" alt="...">
+                        <img src="./images/speaker_2.jpg" class="card-img-top rounded-circle p-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Michael Dam</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -108,7 +108,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/images/speaker_3.jpg" class="card-img-top rounded-circle p-4" alt="...">
+                        <img src="./images/speaker_3.jpg" class="card-img-top rounded-circle p-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Mark Twight</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -118,7 +118,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/images/speaker_4.jpg" class="card-img-top rounded-circle p-4" alt="...">
+                        <img src="./images/speaker_4.jpg" class="card-img-top rounded-circle p-4" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Mary Jean</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -136,13 +136,13 @@
             <div class="row">
                 <div class="col-sm"></div>
                 <div class="col-sm">
-                    <img src="/images/bml_logo.png" alt="" style="height: 75px">
+                    <img src="./images/bml_logo.png" alt="" style="height: 75px">
                 </div>
                 <div class="col-sm">
-                    <img src="/images/dhiraagu_logo.jpeg" alt="" style="height: 100px">
+                    <img src="./images/dhiraagu_logo.jpeg" alt="" style="height: 100px">
                 </div>
                 <div class="col-sm">
-                    <img src="/images/sto_logo.png" alt="" style="height: 100px">
+                    <img src="./images/sto_logo.png" alt="" style="height: 100px">
                 </div>
                 <div class="col-sm"></div>
             </div>
