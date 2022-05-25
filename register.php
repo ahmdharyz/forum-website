@@ -16,7 +16,9 @@ if(isset($_POST["psubmit"])){
 
     $result=mysqli_query($con,$sqlinsert);
     if($result){
-        echo 'Inserted';
+        echo '<script>
+		alert("Inserted Successfully.");
+    </script>';
     }else{
         die(mysqli_error($con));
     }
