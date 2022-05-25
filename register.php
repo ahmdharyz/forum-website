@@ -1,3 +1,29 @@
+<?php
+include 'db_connection.php';
+if(isset($_POST["psubmit"])){
+    $name=$_POST['Pname'];
+    $NIC_PP=$_POST['Pnic'];
+    $DOB=$_POST['Pdob'];
+    $ContactNo=$_POST['Pphone'];
+    $email=$_POST['Pemail'];
+    $educationLevel=$_POST['PeducationLevel'];
+    $isPaid=1;
+    $isPending=1;
+    $isApproved=0;
+    $isRejected=0;
+
+    $sqlinsert = "INSERT INTO participants (FullName,NID,DOB,ContactNo,email,education_level,isPaid,isPending,isApproved,isRejected) values ('$name','$NIC_PP','$DOB','$ContactNo','$email','$educationLevel','$isPaid','$isPending','$isApproved','$isRejected')";
+
+    $result=mysqli_query($con,$sqlinsert);
+    if($result){
+        echo 'Inserted';
+    }else{
+        die(mysqli_error($con));
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,36 +53,36 @@
                 <div class="col-sm-1"></div>
                 <div class="col-lg-5 bg-white p-5 shadow">
                     <h1 class="h3 px-0 text-dark p-3">Submit your registration request</h1>
-                    <form action="submit" method="get">
+                    <form action="" method="post">
                         <div class="mb-3">
                             <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" name='Pname'>
                         </div>
                         <div class="mb-3">
                             <label for="nic" class="form-label">NIC / PP Number</label>
-                            <input type="text" class="form-control" id="nic">
+                            <input type="text" class="form-control" id="nic" name='Pnic'>
                         </div>
                         <div class="mt-3">
                             <label for="dob" class="form-label">Date of Birth</label>
-                            <input type="date" class="form-control" id="dob">
+                            <input type="date" class="form-control" id="dob" name='Pdob'>
                         </div>
                         <div class="mt-3">
                             <label for="phone" class="form-label">Contact Number</label>
-                            <input type="phone" class="form-control" id="phone">
+                            <input type="phone" class="form-control" id="phone" name='Pphone'>
                         </div>
                         <div class="mt-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name='Pemail'>
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mt-3">
                             <label for="" class="form-label">Education Level</label>
-                            <select class="form-select" aria-label="Select education level">
+                            <select class="form-select" aria-label="Select education level" name='PeducationLevel'>
                                 <option selected></option>
-                                <option value="diploma">Diploma</option>
-                                <option value="bachelor">Bachelors Degree</option>
-                                <option value="master">Masters Degree</option>
-                                <option value="doctoral">Doctoral</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Bachelors Degree">Bachelors Degree</option>
+                                <option value="Masters Degree">Masters Degree</option>
+                                <option value="Doctoral">Doctoral</option>
                             </select>
                         </div>
                         <div class="mt-3">
@@ -64,12 +90,12 @@
                             <input class="form-control" type="file" id="file">
                         </div>
                         <div class="mt-3">
-                            <button type="submit" class="btn btn-primary my-4">Submit</button>
+                            <button type="submit" class="btn btn-primary my-4" name="psubmit">Submit</button>
                         </div>
                     </form>
                 </div>
                 <div class="col-md-6 d-none d-lg-block justify-content-center align-items-center">
-                    <img src="/images/registration.png" class="m-5" alt="">
+                    <img src="./images/registration.png" class="m-5" alt="">
                 </div>
             </div>
         </div>
