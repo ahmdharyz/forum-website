@@ -18,6 +18,7 @@ if(isset($_POST["psubmit"])){
     if($result){
         echo '<script>
 		alert("Inserted Successfully.");
+        location.replace("./index.php")
     </script>';
     }else{
         die(mysqli_error($con));
